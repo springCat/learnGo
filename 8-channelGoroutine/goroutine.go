@@ -1,4 +1,4 @@
-package channelGoroutine
+package __channelGoroutine
 
 import (
 	"fmt"
@@ -12,6 +12,7 @@ func Do() {
 		c <- 10
 		close(c)
 	}()
+
 	for {
 		select {
 		case x, ok := <-c:

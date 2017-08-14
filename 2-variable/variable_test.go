@@ -14,6 +14,7 @@ func Test_Va(t *testing.T) {
 	a := Va()
 	t.Logf("Test_Va :%d", a)
 }
+
 func Test_Vsi(t *testing.T) {
 	s, i := Vsi()
 	t.Logf("Test_Va s:%s,i:%d", s, i)

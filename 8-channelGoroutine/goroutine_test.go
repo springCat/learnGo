@@ -1,4 +1,4 @@
-package channelGoroutine
+package __channelGoroutine
 
 import (
 	"testing"

@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;learnGo&gt;">
+    <CLASSES>
+      <root url="file://E:/go_lib/src/gopkg.in" />
+      <root url="file://E:/go_lib/src/github.com" />
+      <root url="file://E:/go_lib/src/golang.org" />
+      <root url="file://E:/go_lib/src/fisrtDemo.lib" />
+      <root url="file://E:/go_lib/src/go_genertor" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://E:/go_lib/src/gopkg.in" />
+      <root url="file://E:/go_lib/src/github.com" />
+      <root url="file://E:/go_lib/src/golang.org" />
+      <root url="file://E:/go_lib/src/fisrtDemo.lib" />
+      <root url="file://E:/go_lib/src/go_genertor" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
