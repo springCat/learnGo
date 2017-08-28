@@ -13,5 +13,10 @@ func Division(a, b float64) (float64, error) {
 }
 
 func main()  {
-		fmt.Fprintln(Division(9,3))
+		i,err:= Division(9,3)
+		if err == nil {
+				fmt.Println(i)
+		} else{
+				fmt.Println(err)
+		}
 }
