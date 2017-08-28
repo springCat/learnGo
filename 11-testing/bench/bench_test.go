@@ -14,7 +14,7 @@ func Benchmark_Division(b *testing.B) {
 func Benchmark_TimeConsumingFunction(b *testing.B) {
 		b.StopTimer() //调用该函数停止压力测试的时间计数
 
-		time.Sleep(10 * time.Second)
+		time.Sleep(3 * time.Second)
 
 		b.StartTimer() //重新开始时间
 		for i := 0; i < b.N; i++ {

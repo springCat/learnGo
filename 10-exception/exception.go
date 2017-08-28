@@ -10,3 +10,8 @@ func test()  {
 	}()
 	panic("error")
 }
+
+
+func test1()  {
+		panic("error")
+}
