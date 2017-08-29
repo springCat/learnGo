@@ -9,5 +9,5 @@ func Test_test(t *testing.T) {
 }
 
 func Test_test1(t *testing.T) {
-		test1() //error
+		//test1() //error
 }

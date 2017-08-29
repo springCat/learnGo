@@ -22,13 +22,13 @@ type SuperUser struct {
 		User
 		Permerssion string
 }
+//type SuperUser struct {
+//		User  User
+//		Permerssion string
+//}
 
 func (u SuperUser) getPermerssion() string {
 		return u.Permerssion
 }
 
 
-type SuperUser1 struct {
-		User  User
-		Permerssion string
-}

@@ -8,18 +8,18 @@ func Test_MapDemo(t *testing.T) {
 
 		bird := Bird{1, "blackBird"}
 		t.Log(bird.Swim())
-		t.Log("----------------")
+		t.Log("-------bird---------")
 
 		d := Duck(bird)
 		t.Log(d.Swim())
-		t.Log("----------------")
+		t.Log("--------Duck--------")
 
 		flyBird := FlyBird{
 				Bird: bird,
 		}
 		t.Log(flyBird.Swim())
 		t.Log(flyBird.Fly())
-		t.Log("----------------")
+		t.Log("--------flyBird--------")
 
 		guaGuaBird := GuaGuaBird{
 				Duck:bird,
@@ -27,7 +27,7 @@ func Test_MapDemo(t *testing.T) {
 		t.Log(guaGuaBird.Swim())
 		//t.Log(guaGuaBird.Fly())
 		t.Log(guaGuaBird.GuaGua())
-		t.Log("----------------")
+		t.Log("------guaGuaBird----------")
 
 
 		guaGuaBird2 := GuaGuaBird{
@@ -37,8 +37,11 @@ func Test_MapDemo(t *testing.T) {
 		//t.Log(guaGuaBird.Fly())
 		t.Log(guaGuaBird2.GuaGua())
 
-		t.Log(guaGuaBird2.Duck.(FlyBird).Fly())
+
+		if dd,ok := (guaGuaBird2.Duck).(FlyBird);ok {
+				t.Log(dd.Fly())
+		}
 		//t.Log(guaGuaBird2.(Duck).Swim()) //error
-		t.Log("----------------")
+		t.Log("-------guaGuaBird2---------")
 
 }

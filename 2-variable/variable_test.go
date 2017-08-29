@@ -3,11 +3,11 @@ package variable
 import "testing"
 
 func Test_const(t *testing.T) {
-	t.Logf("Test_Va :%s", a)
+	t.Logf("Test_const :%s", a)
 }
 
 func Test_iota(t *testing.T) {
-	t.Logf("Test_Va :%d,%d,%d", Monday, Tuesday, Wednesday)
+	t.Logf("Test_iota :%d,%d,%d", Monday, Tuesday, Wednesday)
 }
 
 func Test_Va(t *testing.T) {
@@ -17,7 +17,7 @@ func Test_Va(t *testing.T) {
 
 func Test_Vsi(t *testing.T) {
 	s, i := Vsi()
-	t.Logf("Test_Va s:%s,i:%d", s, i)
+	t.Logf("Test_Vsi s:%s,i:%d", s, i)
 }
 
 func Test_Vdatai(t *testing.T) {
