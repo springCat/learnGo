@@ -21,3 +21,7 @@ func Benchmark_TimeConsumingFunction(b *testing.B) {
 				Division(4, 5)
 		}
 }
+//go test -test.bench=".*" -test.cpuprofile cpu.out -test.memprofile mem.out -test.blockprofile block.out
+//go tool pprof cpu.out
+//flat代表本地取样计数
+//cumulative代表累积取样计数
